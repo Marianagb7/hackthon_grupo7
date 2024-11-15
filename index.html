@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Supplier evaluator</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="grid-container">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+
+          <span class="material-icons-outlined">search</span>
+        </div>
+        <div class="header-right">
+          <span class="material-icons-outlined">notifications</span>
+          <span class="material-icons-outlined">email</span>
+          <span class="material-icons-outlined">account_circle</span>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <span class="material-icons-outlined">store</span>Nombre empresa
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">import_contacts</span> Información general
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">trending_up</span> Situación Financiera
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">fact_check</span> Experiencia 
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">gavel</span> Situación Juridica
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">high_quality</span> Certificaciones de calidad
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">assured_workload</span> Otros aspectos relevantes
+            </a>
+          </li>
+          
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+          
+          <div class="main-info">
+            <P class="main-title-section">INFORMACIÓN GENERAL</P>            
+            <p class="main-text">NIT</p>
+            <P class="main-text">ACTIVIDAD ECONÓMICA</P>
+            <P class="main-text">Ubicación</P>
+            <p class="main-text">Tipo de sociedad</p>
+            <p class="main-text">Representante legal</p>
+            <p class="main-text">Estado de matrícula mercantil</p>
+          </div>
+          
+        </div>
+        <div class="main-title-section"> INFORMACIÓN FiNANCIERA</div>
+
+        <div class="main-cards">
+          
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">TOTAL ACTIVO</p>
+              <span class="material-icons-outlined text-blue">currency_exchange</span>
+            </div>
+            <span class="text-primary font-weight-bold">$$$$$$$</span>
+            <p class="text-primary">Variación</p> -0.2%
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">TOTAL PASIVO</p>
+              <span class="material-icons-outlined text-red">money_off</span>
+            </div>
+            <span class="text-primary font-weight-bold">$$$$$$</span>
+            <p class="text-primary">Variación</p> -0.2%
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">TOTAL PATRIMONIO</p>
+              <span class="material-icons-outlined text-green">paid</span>
+            </div>
+            <span class="text-primary font-weight-bold">$$$$$$</span>
+            <p class="text-primary">Variación</p> -0.2%
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">INGRESO ÚLTIMO AÑO</p>
+              <span class="material-icons-outlined text-orange">request_quote</span>
+            </div>
+            <span class="text-primary font-weight-bold">$$$$$$</span>
+            <p class="text-primary">Variación</p> -0.2%
+          </div>
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">GANANCIA/PERDIDA</p>
+              <span class="material-icons-outlined text-purple">play_for_work</span>
+            </div>
+            <span class="text-primary font-weight-bold">$$$$$$</span>
+            <p class="text-primary">Variación</p> -0.2%
+          </div>
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">ENDEUDAMIENTO</p>
+              <span class="material-icons-outlined text-grey">payments</span>
+            </div>
+            <span class="text-primary font-weight-bold">$$$$$$</span>
+            <p class="text-primary">Último año</p> 22%
+          </div>
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">PRUEBA ÁCIDA</p>
+              <span class="material-icons-outlined text-greenyellow">query_stats</span>
+            </div>
+            <span class="text-primary font-weight-bold">$$$$$$</span>
+            <p class="text-primary">Último año</p> 0.33 veces
+          </div>
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">CAPITAL DE TRABAJO</p>
+              <span class="material-icons-outlined text-mediumturquoise">troubleshoot</span>
+            </div>
+            <span class="text-primary font-weight-bold">$$$$$$</span>
+            <p class="text-primary">Último año</p> 
+          </div>
+
+          
+        </div>
+
+        <div class="charts">
+
+          <div class="charts-card">
+            <p class="chart-title">Grafica 1</p>
+            <div id="bar-chart"></div>
+          </div>
+
+          <div class="charts-card">
+            <p class="chart-title">Grafica2</p>
+            <div id="area-chart"></div>
+          </div>
+
+        </div>
+      </main>
+      <!-- End Main -->
+
+    </div>
+
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
